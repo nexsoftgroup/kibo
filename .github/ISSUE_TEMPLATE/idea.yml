@@ -1,0 +1,24 @@
+name: Proponer una idea
+description: Algo que te gustaría que Kibo hiciera, o hiciera mejor.
+title: "[Idea] "
+labels: ["idea"]
+body:
+  - type: textarea
+    id: problema
+    attributes:
+      label: Qué te gustaría resolver
+      description: Cuéntanos la situación. Por ejemplo, «cuando tengo muchos agentes, me cuesta ver cuál me espera».
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Cómo te lo imaginas (opcional)
+  - type: dropdown
+    id: sistema
+    attributes:
+      label: Sistema que usas
+      options:
+        - Windows
+        - Linux
+        - macOS

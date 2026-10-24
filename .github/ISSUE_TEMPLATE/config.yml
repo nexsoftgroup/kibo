@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Preguntas frecuentes
+    url: https://kibo.nexsoftgroup.com/docs/preguntas.html
+    about: Mira si tu duda ya tiene respuesta.
+  - name: Documentación de Kibo
+    url: https://kibo.nexsoftgroup.com/docs/index.html
+    about: Instalación, primeros pasos y todas las funciones.
+  - name: Un problema de seguridad
+    url: mailto:contacto@nexsoftgroup.com
+    about: No lo publiques en un issue. Escríbenos a contacto@nexsoftgroup.com y lo vemos en privado.
