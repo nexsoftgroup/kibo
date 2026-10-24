@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://kibo.nexsoftgroup.com"><b>Descargar</b></a> ·
-  <a href="https://kibo.nexsoftgroup.com/docs/index.html">Documentación</a> ·
+  <a href="https://kibo.nexsoftgroup.com/docs/">Documentación</a> ·
   <a href="CHANGELOG.md">Novedades</a> ·
   <a href="https://github.com/nexsoftgroup/kibo/issues/new/choose">Reportar un problema o proponer una idea</a>
 </p>
@@ -86,7 +86,7 @@ escritorio que convierte sesiones sueltas de **Claude Code** en **un equipo que 
 | **Temas e idiomas** | Kibo, Oscuro y Claro. En español, inglés y portugués (Brasil). |
 | **Avisos de escritorio** | Opcionales: cuando un agente termina o te necesita. |
 
-👉 **[Todas las funciones, con capturas, en el sitio](https://kibo.nexsoftgroup.com/docs/funciones.html)**
+👉 **[Todas las funciones, con capturas, en el sitio](https://kibo.nexsoftgroup.com/docs/funciones)**
 
 ## Instalar
 
@@ -107,7 +107,7 @@ curl -fsSL https://kibo.nexsoftgroup.com/install.sh | sh
 
 El comando te pregunta con qué IA vas a trabajar, te pide permiso antes de instalar cada cosa que falte, baja Kibo del
 sitio y **comprueba que es el nuestro (SHA-256)** antes de instalarlo. En Windows también hay un instalador con doble
-clic en el sitio. [Paso a paso](https://kibo.nexsoftgroup.com/docs/instalar.html).
+clic en el sitio. [Paso a paso](https://kibo.nexsoftgroup.com/docs/instalar).
 
 ### Qué necesitas
 
@@ -129,9 +129,9 @@ Kibo no tiene servidor propio, cuentas, telemetría ni respaldo en la nube, y no
 conversaciones, los adjuntos y la configuración quedan en tu PC. Lo que sale a internet es lo que Claude Code ya manda a
 Anthropic, y lo que tú actives (buscar versiones nuevas, bajar VS Code).
 
-[Política de privacidad](https://kibo.nexsoftgroup.com/privacidad.html) ·
-[Seguridad y verificación](https://kibo.nexsoftgroup.com/seguridad.html) ·
-[Términos de uso](https://kibo.nexsoftgroup.com/terminos.html)
+[Política de privacidad](https://kibo.nexsoftgroup.com/privacidad) ·
+[Seguridad y verificación](https://kibo.nexsoftgroup.com/seguridad) ·
+[Términos de uso](https://kibo.nexsoftgroup.com/terminos)
 
 ## Comentarios, problemas e ideas
 
@@ -140,7 +140,7 @@ Kibo está en beta y tus comentarios nos sirven muchísimo.
 - **¿Algo no funciona?** [Reporta un problema](https://github.com/nexsoftgroup/kibo/issues/new?template=problema.yml).
   Cuéntanos tu versión de Kibo, tu sistema y los pasos para que pase.
 - **¿Se te ocurre algo?** [Propón una idea](https://github.com/nexsoftgroup/kibo/issues/new?template=idea.yml).
-- **¿Una pregunta?** Mira primero las [preguntas frecuentes](https://kibo.nexsoftgroup.com/docs/preguntas.html).
+- **¿Una pregunta?** Mira primero las [preguntas frecuentes](https://kibo.nexsoftgroup.com/docs/preguntas).
 
 Antes de pegar registros o capturas, revisa que no tengan contraseñas, tokens ni datos de clientes.
 
