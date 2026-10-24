@@ -4,10 +4,9 @@ Lo que cambia en cada versión de Kibo. Las versiones siguen
 [versionado semántico](https://semver.org/lang/es/): `MAYOR.MENOR.ARREGLO`.
 
 
-## 1.0.1 · en preparación
+## 1.0.1 · 2026-10-24
 
-Pequeña mejora sobre la 1.0.0. Cuando se publique, la descarga y estas novedades van a estar en
-[Releases](https://github.com/nexsoftgroup/kibo/releases).
+Pequeña mejora sobre la 1.0.0. Descarga y archivos: [Release v1.0.1](https://github.com/nexsoftgroup/kibo/releases/tag/v1.0.1).
 
 ### Añadido
 
