@@ -22,8 +22,9 @@
 
 ![Kibo con cuatro sesiones de Claude Code trabajando a la vez, y la tarjeta de un equipo de Agent Hub](img/portada.png)
 
-> **Este repositorio es la casa pública de Kibo:** información, novedades y el lugar para dejar tus comentarios.
-> El código fuente no se publica acá. Kibo se descarga **sólo** desde [kibo.nexsoftgroup.com](https://kibo.nexsoftgroup.com).
+> **Este repositorio es la casa pública de Kibo:** un resumen, las novedades y el lugar para dejar tus comentarios.
+> Para leer todo, con más capturas y la documentación completa, entra a **[kibo.nexsoftgroup.com](https://kibo.nexsoftgroup.com)**.
+> El código fuente no se publica acá, y Kibo se descarga **sólo** desde ese sitio.
 
 ---
 
@@ -84,6 +85,8 @@ escritorio que convierte sesiones sueltas de **Claude Code** en **un equipo que 
 | **Servidores por SSH** | Sesiones que corren en otra máquina. Sólo con llave SSH: las contraseñas no se guardan. |
 | **Temas e idiomas** | Kibo, Oscuro y Claro. En español, inglés y portugués (Brasil). |
 | **Avisos de escritorio** | Opcionales: cuando un agente termina o te necesita. |
+
+👉 **[Todas las funciones, con capturas, en el sitio](https://kibo.nexsoftgroup.com/docs/funciones.html)**
 
 ## Instalar
 
