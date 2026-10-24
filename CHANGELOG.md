@@ -4,6 +4,21 @@ Lo que cambia en cada versión de Kibo. Las versiones siguen
 [versionado semántico](https://semver.org/lang/es/): `MAYOR.MENOR.ARREGLO`.
 
 
+## 1.0.2 · en preparación
+
+### Añadido
+
+- **Worktree por peer**, una opción por proyecto que viene apagada y sólo se puede prender en repos de git (menú ⋯ del
+  proyecto → **Worktree por peer: activar**). Con la opción prendida, cada peer nuevo trabaja en su propia copia del
+  repo (`<proyecto>.kibo-worktrees/<peer>`) y en su rama `kibo/<peer>`, así los peers no se pisan. La MAIN sigue en
+  la carpeta principal; para que un peer trabaje ahí, la MAIN lo crea con `peers crear <nombre> --principal`.
+- **Integrar el trabajo de un peer** lo decides tú, desde el menú ⋯ → **Integrar «peer» → rama (N commits)…**, y
+  nunca la MAIN. Kibo pone la rama al día (rebase) y la suma sin merge commit. Si hay conflicto, no toca nada.
+- **Quitar el worktree de un peer:** se quita solo cuando ya está todo integrado y el peer está cerrado. Si queda
+  trabajo sin integrar, avisa cuánto se perdería y pide confirmar.
+
+[Cómo funciona el worktree por peer](docs/worktree-por-peer.md).
+
 ## 1.0.1 · 2026-10-24
 
 Pequeña mejora sobre la 1.0.0. Descarga y archivos: [Release v1.0.1](https://github.com/nexsoftgroup/kibo/releases/tag/v1.0.1).
@@ -25,6 +40,9 @@ Pequeña mejora sobre la 1.0.0. Descarga y archivos: [Release v1.0.1](https://gi
 ### Corregido
 
 - La pantalla de **Términos de uso** del instalador ya no muestra el aviso de borrador.
+- **Chat del equipo de Agent Hub:** lo que escribes aparece al instante, con «enviando…», en vez de esperar a que la
+  MAIN o el peer lo reciba (con la MAIN dormida tardaba varios segundos). Si no se pudo mandar, el texto vuelve a la
+  caja.
 
 ## 1.0.0 
 

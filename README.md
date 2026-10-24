@@ -16,7 +16,7 @@
 
 <p align="center">
   <a href="https://kibo.nexsoftgroup.com"><b>Descargar</b></a> ·
-  <a href="https://kibo.nexsoftgroup.com/docs/">Documentación</a> ·
+  <a href="docs/README.md">Documentación</a> ·
   <a href="https://github.com/nexsoftgroup/kibo/releases">Versiones y novedades</a> ·
   <a href="https://github.com/nexsoftgroup/kibo/issues/new/choose">Reportar un problema o proponer una idea</a>
 </p>
@@ -32,7 +32,7 @@
 ![Kibo con cuatro sesiones de Claude Code trabajando a la vez, y la tarjeta de un equipo de Agent Hub](img/portada.png)
 
 > **Este repositorio es la casa pública de Kibo:** un resumen, las novedades y el lugar para dejar tus comentarios.
-> Para leer todo, con más capturas y la documentación completa, entra a **[kibo.nexsoftgroup.com](https://kibo.nexsoftgroup.com)**.
+> La **[documentación completa](docs/README.md)**, con todas las capturas, está en este repo, y cada versión con sus novedades, en **[Releases](https://github.com/nexsoftgroup/kibo/releases)**.
 > El código fuente no se publica acá, y Kibo se descarga **sólo** desde ese sitio.
 
 ---
@@ -95,7 +95,7 @@ escritorio que convierte sesiones sueltas de **Claude Code** en **un equipo que 
 | **Temas e idiomas** | Kibo, Oscuro y Claro. En español, inglés y portugués (Brasil). |
 | **Avisos de escritorio** | Opcionales: cuando un agente termina o te necesita. |
 
-👉 **[Todas las funciones, con capturas, en el sitio](https://kibo.nexsoftgroup.com/docs/funciones)**
+👉 **[Todas las funciones, con capturas](docs/funciones.md)**
 
 ## Instalar
 
@@ -114,7 +114,7 @@ irm https://kibo.nexsoftgroup.com/install.ps1 | iex
 **Qué va a pasar:** te pregunta con qué IA vas a trabajar, te pide permiso antes de instalar cada cosa que falte, baja
 Kibo del sitio, **comprueba que es el nuestro (SHA-256)** y abre su instalador. Así no aparece el aviso de Windows. El
 instalador te muestra los [Términos de uso](https://kibo.nexsoftgroup.com/terminos) antes de instalar.
-[Paso a paso](https://kibo.nexsoftgroup.com/docs/instalar).
+[Paso a paso](docs/instalar.md).
 
 **¿Prefieres el instalador con doble clic?**
 
@@ -122,7 +122,7 @@ instalador te muestra los [Términos de uso](https://kibo.nexsoftgroup.com/termi
 
 Su tamaño, su fecha y su SHA-256 están siempre en [la página de descarga del sitio](https://kibo.nexsoftgroup.com/#descargar). Windows va a mostrar un aviso porque
 todavía no está firmado: **Más información → Ejecutar de todas formas**.
-[Por qué pasa](https://kibo.nexsoftgroup.com/docs/preguntas#smartscreen) ·
+[Por qué pasa](docs/preguntas.md#smartscreen) ·
 [Cómo comprobar el SHA-256](https://kibo.nexsoftgroup.com/seguridad#verificar) (el comando de la terminal lo hace solo).
 
 ### Linux y macOS
@@ -148,7 +148,7 @@ pruebas, nos sirve saber qué pasó.
 **Claude Code**, instalado y con **tu propia sesión iniciada**. Sin eso puedes crear y abrir proyectos, pero no
 sesiones: Kibo te muestra su estado, el comando oficial para instalarlo y un botón para iniciar sesión, donde el login
 lo haces tú. Kibo no lo incluye ni lo revende, y no lee tus credenciales.
-[Más sobre Claude Code en Kibo](https://kibo.nexsoftgroup.com/docs/cli).
+[Más sobre Claude Code en Kibo](docs/cli.md).
 
 > **Beta: pruébalo con Claude Code.** Kibo está hecho y probado al 100 % con Claude Code. La idea es que más adelante
 > funcione con más agentes de IA.
@@ -170,7 +170,7 @@ Kibo está en beta y tus comentarios nos sirven muchísimo.
 - **¿Algo no funciona?** [Reporta un problema](https://github.com/nexsoftgroup/kibo/issues/new?template=problema.yml).
   Cuéntanos tu versión de Kibo, tu sistema y los pasos para que pase.
 - **¿Se te ocurre algo?** [Propón una idea](https://github.com/nexsoftgroup/kibo/issues/new?template=idea.yml).
-- **¿Una pregunta?** Mira primero las [preguntas frecuentes](https://kibo.nexsoftgroup.com/docs/preguntas).
+- **¿Una pregunta?** Mira primero las [preguntas frecuentes](docs/preguntas.md).
 
 Antes de pegar registros o capturas, revisa que no tengan contraseñas, tokens ni datos de clientes.
 

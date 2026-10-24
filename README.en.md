@@ -16,7 +16,7 @@
 
 <p align="center">
   <a href="https://kibo.nexsoftgroup.com"><b>Download</b></a> ·
-  <a href="https://kibo.nexsoftgroup.com/docs/">Docs</a> ·
+  <a href="docs/README.md">Docs</a> ·
   <a href="https://github.com/nexsoftgroup/kibo/releases">Releases and changelog</a> ·
   <a href="https://github.com/nexsoftgroup/kibo/issues/new/choose">Report a problem or suggest an idea</a>
 </p>
@@ -32,8 +32,8 @@
 ![Kibo with four Claude Code sessions working at the same time, and an Agent Hub team card](img/portada.png)
 
 > **This repository is Kibo’s public home:** an overview, the changelog and the place to leave your feedback.
-> The full details, more screenshots and the documentation are at **[kibo.nexsoftgroup.com](https://kibo.nexsoftgroup.com)**
-> (in Spanish for now; your browser can translate it).
+> The **[full documentation](docs/README.md)**, with all the screenshots, lives in this repo (in Spanish for now),
+> and every version with its changelog is in **[Releases](https://github.com/nexsoftgroup/kibo/releases)**.
 > The source code is not published here, and Kibo is downloaded **only** from that site.
 > The app itself speaks English, Spanish and Brazilian Portuguese.
 
@@ -97,7 +97,7 @@ turns separate **Claude Code** sessions into **a team that works together**, in 
 | **Themes and languages** | Kibo, Dark and Light. In English, Spanish and Brazilian Portuguese. |
 | **Desktop notifications** | Optional: when an agent finishes or needs you. |
 
-👉 **[All features, with screenshots, on the website](https://kibo.nexsoftgroup.com/docs/funciones)** (in Spanish)
+👉 **[All features, with screenshots](docs/funciones.md)** (in Spanish)
 
 ## Install
 
