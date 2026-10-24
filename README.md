@@ -20,6 +20,10 @@
   Gratis · 100 % local · Sin telemetría · No lee tus credenciales · Versión 1.0.0 (beta)
 </p>
 
+<p align="center">
+  <b>Español</b> · <a href="README.en.md">English</a>
+</p>
+
 ![Kibo con cuatro sesiones de Claude Code trabajando a la vez, y la tarjeta de un equipo de Agent Hub](img/portada.png)
 
 > **Este repositorio es la casa pública de Kibo:** un resumen, las novedades y el lugar para dejar tus comentarios.
