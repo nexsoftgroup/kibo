@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/nexsoftgroup/kibo/releases/download/v1.0.1/Kibo-1.0.1-Setup.exe"><img src="https://img.shields.io/badge/Download_for_Windows-Kibo_1.0.1_%28.exe%29-3346e0?style=for-the-badge" alt="Download Kibo 1.0.1 for Windows (.exe)"></a>
+  <a href="https://github.com/nexsoftgroup/kibo/releases/download/v1.0.2/Kibo-1.0.2-Setup.exe"><img src="https://img.shields.io/badge/Download_for_Windows-Kibo_1.0.2_%28.exe%29-3346e0?style=for-the-badge" alt="Download Kibo 1.0.2 for Windows (.exe)"></a>
   <a href="https://kibo.nexsoftgroup.com"><img src="https://img.shields.io/badge/Website-kibo.nexsoftgroup.com-0f2340?style=for-the-badge" alt="Website: kibo.nexsoftgroup.com"></a>
 </p>
 
@@ -22,7 +22,7 @@
 </p>
 
 <p align="center">
-  Free · 100% local · No telemetry · Never reads your credentials · Version 1.0.1 (beta)
+  Free · 100% local · No telemetry · Never reads your credentials · Version 1.0.2 (beta)
 </p>
 
 <p align="center">
@@ -120,7 +120,7 @@ doesn’t appear. The installer shows you the [Terms of use](https://kibo.nexsof
 
 **Prefer the double-click installer?**
 
-[![Download Kibo 1.0.1 for Windows (.exe)](https://img.shields.io/badge/Download-Kibo--1.0.1--Setup.exe-3346e0?style=for-the-badge)](https://github.com/nexsoftgroup/kibo/releases/download/v1.0.1/Kibo-1.0.1-Setup.exe)
+[![Download Kibo 1.0.2 for Windows (.exe)](https://img.shields.io/badge/Download-Kibo--1.0.2--Setup.exe-3346e0?style=for-the-badge)](https://github.com/nexsoftgroup/kibo/releases/download/v1.0.2/Kibo-1.0.2-Setup.exe)
 
 Its size, date and SHA-256 are always on [the site’s download section](https://kibo.nexsoftgroup.com/#descargar). Windows will show a warning because it isn’t
 signed yet: **More info → Run anyway**.
