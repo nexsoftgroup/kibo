@@ -3,6 +3,30 @@
 Lo que cambia en cada versión de Kibo. Las versiones siguen
 [versionado semántico](https://semver.org/lang/es/): `MAYOR.MENOR.ARREGLO`.
 
+
+## 1.0.1 · en preparación
+
+Pequeña mejora sobre la 1.0.0. Cuando se publique, la descarga y estas novedades van a estar en
+[Releases](https://github.com/nexsoftgroup/kibo/releases).
+
+### Añadido
+
+- **Menú ⋯ en cada proyecto** de la lista (el mismo del clic derecho, en lugar del lápiz suelto): **Renombrar…**,
+  **Cerrar proyecto** y la Wiki del proyecto.
+- **Detener o activar la Wiki por proyecto:** **Wiki: detener** cierra su sesión para que no gaste tokens, Kibo deja de
+  pasarle conversaciones y la MAIN ya no la ve ni la usa. **Wiki: activar** la retoma donde quedó, con lo que ya había
+  documentado. Cada proyecto decide: puedes tenerla apagada en uno y activa en otro.
+
+### Cambiado
+
+- **Sin límite de agentes vivos por proyecto:** creas o despiertas todos los peers que necesites.
+- **La MAIN cuida el costo:** sabe que cada peer vivo es una sesión de la IA que gasta de tu plan y memoria de la PC.
+  Antes de crear uno nuevo reutiliza uno libre, y si ya hay 5 o más vivos te pregunta antes de crear otro.
+
+### Corregido
+
+- La pantalla de **Términos de uso** del instalador ya no muestra el aviso de borrador.
+
 ## 1.0.0 
 
 Primera versión pública, en **beta**: hecha y probada a fondo con Claude Code. Probada en Windows 11 (pruebas de interfaz y de motor) y en Linux con Ubuntu 24.04 dentro de WSL, con ventana real; macOS experimental: sin probar en una Mac, hasta la primera corrida de las pruebas automáticas en GitHub, que se estrenan con esta versión.
