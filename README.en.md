@@ -10,6 +10,11 @@
 </p>
 
 <p align="center">
+  <a href="https://kibo.nexsoftgroup.com/descargas/Kibo-1.0.0-Setup.exe"><img src="https://img.shields.io/badge/Download_for_Windows-Kibo_1.0.0_%28.exe%29-3346e0?style=for-the-badge" alt="Download Kibo 1.0.0 for Windows (.exe)"></a>
+  <a href="https://kibo.nexsoftgroup.com"><img src="https://img.shields.io/badge/Website-kibo.nexsoftgroup.com-0f2340?style=for-the-badge" alt="Website: kibo.nexsoftgroup.com"></a>
+</p>
+
+<p align="center">
   <a href="https://kibo.nexsoftgroup.com"><b>Download</b></a> ·
   <a href="https://kibo.nexsoftgroup.com/docs/">Docs</a> ·
   <a href="CHANGELOG.md">Changelog</a> ·
@@ -96,35 +101,53 @@ turns separate **Claude Code** sessions into **a team that works together**, in 
 
 ## Install
 
-Kibo is downloaded **only** from [kibo.nexsoftgroup.com](https://kibo.nexsoftgroup.com). The current version is always
-there, with its size, date and SHA-256.
+Kibo installs for your user, inside your profile, and is downloaded **only** from
+[kibo.nexsoftgroup.com](https://kibo.nexsoftgroup.com). The installer speaks English, Spanish or Portuguese, following
+your system language.
 
-**Windows** (recommended): open PowerShell, paste this and press Enter.
+### Windows
+
+**Recommended: from the terminal, in one line.** Open PowerShell (Windows key, type “PowerShell” and Enter), paste
+this and press Enter:
 
 ```powershell
 irm https://kibo.nexsoftgroup.com/install.ps1 | iex
 ```
 
-**Linux and macOS** (macOS is experimental): open a terminal, paste this and press Enter.
+**What happens:** it asks which AI you will work with, asks for permission before installing anything missing,
+downloads Kibo from the site, **checks it is ours (SHA-256)** and opens its installer. That way the Windows warning
+doesn’t appear. The installer shows you the [Terms of use](https://kibo.nexsoftgroup.com/terminos) before installing.
+
+**Prefer the double-click installer?**
+
+[![Download Kibo 1.0.0 for Windows (.exe)](https://img.shields.io/badge/Download-Kibo--1.0.0--Setup.exe-3346e0?style=for-the-badge)](https://kibo.nexsoftgroup.com/descargas/Kibo-1.0.0-Setup.exe)
+
+Its size, date and SHA-256 are always on [the site’s download section](https://kibo.nexsoftgroup.com/#descargar). Windows will show a warning because it isn’t
+signed yet: **More info → Run anyway**.
+
+### Linux and macOS
+
+Open a terminal, paste this and press Enter:
 
 ```sh
 curl -fsSL https://kibo.nexsoftgroup.com/install.sh | sh
 ```
 
-The command asks which AI you will work with, asks for permission before installing anything missing, downloads Kibo
-from the site and **checks it is ours (SHA-256)** before installing it. It speaks English, Spanish or Portuguese,
-following your system language. On Windows there is also a double-click installer on the site.
+It asks the same questions, downloads Kibo from the site, checks its SHA-256 and installs it for your user in
+`~/Kibo/kibo`, without `sudo`. On macOS it is **experimental**: the code is written, but it hasn’t been tested on a real
+Mac yet. If you try it, we’d love to know how it went.
 
 ### What you need
 
 | System | Status | Needs |
 |---|---|---|
-| **Windows 10 / 11** (64-bit) | Supported | WebView2 (comes with Windows), Git for Windows and Claude Code. The terminal command installs what is missing, if you allow it. |
-| **Linux** | Tested on Ubuntu 24.04 (WSL) | Python 3.11+, the system’s GTK, WebKit2GTK and PyGObject, and Claude Code. |
-| **macOS** | Experimental | Python 3.11+ and Claude Code. |
+| **Windows 10 / 11** (64-bit) | Supported | WebView2 (comes with Windows; if missing, the installer downloads it), Git for Windows (Claude Code needs it) and Claude Code. No Python needed: the installer brings it. The terminal command installs what is missing, if you allow it. |
+| **Linux** | Tested on Ubuntu 24.04 (WSL) | Python 3.11+, the system’s GTK, WebKit2GTK and PyGObject (or Qt with `--qt`), and Claude Code. The terminal command installs Claude Code, if you allow it. |
+| **macOS** | Experimental | Python 3.11+ and Claude Code. The terminal command installs Claude Code, if you allow it. |
 
-**Claude Code**, installed and with **your own session signed in**. Kibo doesn’t include or resell it, and never reads
-your credentials: you sign in yourself.
+**Claude Code**, installed and with **your own session signed in**. Without it you can create and open projects, but
+not sessions: Kibo shows you its status, the official install command and a button to sign in, where you do the login
+yourself. Kibo doesn’t include or resell it, and never reads your credentials.
 
 > **Beta: try it with Claude Code.** Kibo is built and fully tested with Claude Code. The plan is for it to work with
 > more AI agents later on.

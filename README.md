@@ -10,6 +10,11 @@
 </p>
 
 <p align="center">
+  <a href="https://kibo.nexsoftgroup.com/descargas/Kibo-1.0.0-Setup.exe"><img src="https://img.shields.io/badge/Descargar_para_Windows-Kibo_1.0.0_%28.exe%29-3346e0?style=for-the-badge" alt="Descargar Kibo 1.0.0 para Windows (.exe)"></a>
+  <a href="https://kibo.nexsoftgroup.com"><img src="https://img.shields.io/badge/Sitio_web-kibo.nexsoftgroup.com-0f2340?style=for-the-badge" alt="Sitio web: kibo.nexsoftgroup.com"></a>
+</p>
+
+<p align="center">
   <a href="https://kibo.nexsoftgroup.com"><b>Descargar</b></a> ·
   <a href="https://kibo.nexsoftgroup.com/docs/">Documentación</a> ·
   <a href="CHANGELOG.md">Novedades</a> ·
@@ -94,35 +99,56 @@ escritorio que convierte sesiones sueltas de **Claude Code** en **un equipo que 
 
 ## Instalar
 
-Kibo se descarga **sólo** desde [kibo.nexsoftgroup.com](https://kibo.nexsoftgroup.com). Ahí está siempre la versión
-actual, con su tamaño, su fecha y su SHA-256.
+Kibo se instala para tu usuario, dentro de tu perfil, y se descarga **sólo** desde
+[kibo.nexsoftgroup.com](https://kibo.nexsoftgroup.com).
 
-**Windows** (recomendado): abre PowerShell, pega esto y presiona Enter.
+### Windows
+
+**Recomendado: desde la terminal, en una línea.** Abre PowerShell (tecla Windows, escribe «PowerShell» y Enter), pega
+esto y presiona Enter:
 
 ```powershell
 irm https://kibo.nexsoftgroup.com/install.ps1 | iex
 ```
 
-**Linux y macOS** (macOS experimental): abre una terminal, pega esto y presiona Enter.
+**Qué va a pasar:** te pregunta con qué IA vas a trabajar, te pide permiso antes de instalar cada cosa que falte, baja
+Kibo del sitio, **comprueba que es el nuestro (SHA-256)** y abre su instalador. Así no aparece el aviso de Windows. El
+instalador te muestra los [Términos de uso](https://kibo.nexsoftgroup.com/terminos) antes de instalar.
+[Paso a paso](https://kibo.nexsoftgroup.com/docs/instalar).
+
+**¿Prefieres el instalador con doble clic?**
+
+[![Descargar Kibo 1.0.0 para Windows (.exe)](https://img.shields.io/badge/Descargar-Kibo--1.0.0--Setup.exe-3346e0?style=for-the-badge)](https://kibo.nexsoftgroup.com/descargas/Kibo-1.0.0-Setup.exe)
+
+Su tamaño, su fecha y su SHA-256 están siempre en [la página de descarga del sitio](https://kibo.nexsoftgroup.com/#descargar). Windows va a mostrar un aviso porque
+todavía no está firmado: **Más información → Ejecutar de todas formas**.
+[Por qué pasa](https://kibo.nexsoftgroup.com/docs/preguntas#smartscreen) ·
+[Cómo comprobar el SHA-256](https://kibo.nexsoftgroup.com/seguridad#verificar) (el comando de la terminal lo hace solo).
+
+### Linux y macOS
+
+Abre una terminal, pega esto y presiona Enter:
 
 ```sh
 curl -fsSL https://kibo.nexsoftgroup.com/install.sh | sh
 ```
 
-El comando te pregunta con qué IA vas a trabajar, te pide permiso antes de instalar cada cosa que falte, baja Kibo del
-sitio y **comprueba que es el nuestro (SHA-256)** antes de instalarlo. En Windows también hay un instalador con doble
-clic en el sitio. [Paso a paso](https://kibo.nexsoftgroup.com/docs/instalar).
+Hace las mismas preguntas, baja Kibo del sitio, comprueba su SHA-256 y lo instala para tu usuario en `~/Kibo/kibo`,
+sin `sudo`. En macOS es **experimental**: el código está escrito, pero todavía no se probó en una Mac de verdad. Si lo
+pruebas, nos sirve saber qué pasó.
 
 ### Qué necesitas
 
 | Sistema | Estado | Necesita |
 |---|---|---|
-| **Windows 10 / 11** (64 bits) | Soportado | WebView2 (viene con Windows), Git for Windows y Claude Code. El comando de la terminal instala lo que falte, si lo autorizas. |
-| **Linux** | Probado en Ubuntu 24.04 (WSL) | Python 3.11+, GTK, WebKit2GTK y PyGObject del sistema, y Claude Code. |
-| **macOS** | Experimental | Python 3.11+ y Claude Code. |
+| **Windows 10 / 11** (64 bits) | Soportado | WebView2 (viene con Windows; si falta, el instalador lo baja), Git for Windows (lo necesita Claude Code) y Claude Code. No hace falta Python: el instalador lo trae. El comando de la terminal instala lo que falte, si lo autorizas. |
+| **Linux** | Probado en Ubuntu 24.04 (WSL) | Python 3.11+, GTK, WebKit2GTK y PyGObject del sistema (o Qt con `--qt`) y Claude Code. El comando de la terminal instala Claude Code, si lo autorizas. |
+| **macOS** | Experimental | Python 3.11+ y Claude Code. El comando de la terminal instala Claude Code, si lo autorizas. |
 
-**Claude Code**, instalado y con **tu propia sesión iniciada**. Kibo no lo incluye ni lo revende, y no lee tus
-credenciales: el login lo haces tú.
+**Claude Code**, instalado y con **tu propia sesión iniciada**. Sin eso puedes crear y abrir proyectos, pero no
+sesiones: Kibo te muestra su estado, el comando oficial para instalarlo y un botón para iniciar sesión, donde el login
+lo haces tú. Kibo no lo incluye ni lo revende, y no lee tus credenciales.
+[Más sobre Claude Code en Kibo](https://kibo.nexsoftgroup.com/docs/cli).
 
 > **Beta: pruébalo con Claude Code.** Kibo está hecho y probado al 100 % con Claude Code. La idea es que más adelante
 > funcione con más agentes de IA.
