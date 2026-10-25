@@ -84,10 +84,6 @@ Primera versión pública, en **beta**: hecha y probada a fondo con Claude Code.
 
 - **Los mensajes del motor en tres idiomas** (errores y avisos de Kibo, de Agent Hub, de las tareas y de los servidores, y lo que llega desde el navegador).
 
-- **Pruebas automáticas en GitHub Actions** en Windows, Ubuntu y macOS, en cada cambio a `main`.
-
-- Una guía de cómo se publica una versión y qué significa cada número.
-
 ### Cambiado
 
 - **«Sala de mando» pasa a llamarse «Agent Hub»** en toda la interfaz, en los tres idiomas y sin traducir. Su entrada es una tarjeta, la primera del panel izquierdo, arriba de PROYECTOS, con «N trabajando · N te esperan» y un latido mientras hay agentes trabajando.
