@@ -122,7 +122,7 @@ doesn’t appear. The installer shows you the [Terms of use](https://kibo.nexsof
 
 [![Download the latest Kibo for Windows (.exe)](https://img.shields.io/badge/Download-Kibo--Setup.exe_%28latest%29-3346e0?style=for-the-badge)](https://github.com/nexsoftgroup/kibo/releases/latest/download/Kibo-Setup.exe)
 
-Its size, date and SHA-256 are always on [the site’s download section](https://kibo.nexsoftgroup.com/#descargar). Windows will show a warning because it isn’t
+It always downloads the latest version. Its number, changelog and SHA-256 are in [Releases](https://github.com/nexsoftgroup/kibo/releases/latest). Windows will show a warning because it isn’t
 signed yet: **More info → Run anyway**.
 
 ### Linux and macOS

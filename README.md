@@ -120,7 +120,7 @@ instalador te muestra los [Términos de uso](https://kibo.nexsoftgroup.com/termi
 
 [![Descargar la última versión de Kibo para Windows (.exe)](https://img.shields.io/badge/Descargar-Kibo--Setup.exe_%28%C3%BAltima_versi%C3%B3n%29-3346e0?style=for-the-badge)](https://github.com/nexsoftgroup/kibo/releases/latest/download/Kibo-Setup.exe)
 
-Su tamaño, su fecha y su SHA-256 están siempre en [la página de descarga del sitio](https://kibo.nexsoftgroup.com/#descargar). Windows va a mostrar un aviso porque
+Baja siempre la última versión. Su número, sus novedades y su SHA-256 están en [Releases](https://github.com/nexsoftgroup/kibo/releases/latest). Windows va a mostrar un aviso porque
 todavía no está firmado: **Más información → Ejecutar de todas formas**.
 [Por qué pasa](docs/preguntas.md#smartscreen) ·
 [Cómo comprobar el SHA-256](https://kibo.nexsoftgroup.com/seguridad#verificar) (el comando de la terminal lo hace solo).
