@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/nexsoftgroup/kibo/releases/download/v1.0.2/Kibo-1.0.2-Setup.exe"><img src="https://img.shields.io/badge/Descargar_para_Windows-Kibo_1.0.2_%28.exe%29-3346e0?style=for-the-badge" alt="Descargar Kibo 1.0.2 para Windows (.exe)"></a>
+  <a href="https://github.com/nexsoftgroup/kibo/releases/latest/download/Kibo-Setup.exe"><img src="https://img.shields.io/badge/Descargar_para_Windows-%C3%BAltima_versi%C3%B3n_%28.exe%29-3346e0?style=for-the-badge" alt="Descargar la última versión de Kibo para Windows (.exe)"></a>
   <a href="https://kibo.nexsoftgroup.com"><img src="https://img.shields.io/badge/Sitio_web-kibo.nexsoftgroup.com-0f2340?style=for-the-badge" alt="Sitio web: kibo.nexsoftgroup.com"></a>
 </p>
 
@@ -22,7 +22,7 @@
 </p>
 
 <p align="center">
-  Gratis · 100 % local · Sin telemetría · No lee tus credenciales · Versión 1.0.2 (beta)
+  Gratis · 100 % local · Sin telemetría · No lee tus credenciales · Beta
 </p>
 
 <p align="center">
@@ -118,7 +118,7 @@ instalador te muestra los [Términos de uso](https://kibo.nexsoftgroup.com/termi
 
 **¿Prefieres el instalador con doble clic?**
 
-[![Descargar Kibo 1.0.2 para Windows (.exe)](https://img.shields.io/badge/Descargar-Kibo--1.0.2--Setup.exe-3346e0?style=for-the-badge)](https://github.com/nexsoftgroup/kibo/releases/download/v1.0.2/Kibo-1.0.2-Setup.exe)
+[![Descargar la última versión de Kibo para Windows (.exe)](https://img.shields.io/badge/Descargar-Kibo--Setup.exe_%28%C3%BAltima_versi%C3%B3n%29-3346e0?style=for-the-badge)](https://github.com/nexsoftgroup/kibo/releases/latest/download/Kibo-Setup.exe)
 
 Su tamaño, su fecha y su SHA-256 están siempre en [la página de descarga del sitio](https://kibo.nexsoftgroup.com/#descargar). Windows va a mostrar un aviso porque
 todavía no está firmado: **Más información → Ejecutar de todas formas**.
