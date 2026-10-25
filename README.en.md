@@ -15,7 +15,7 @@
 </p>
 
 <p align="center">
-  <a href="https://kibo.nexsoftgroup.com"><b>Download</b></a> ·
+  <a href="https://github.com/nexsoftgroup/kibo/releases/latest"><b>Download</b></a> ·
   <a href="docs/README.md">Docs</a> ·
   <a href="https://github.com/nexsoftgroup/kibo/releases">Releases and changelog</a> ·
   <a href="https://github.com/nexsoftgroup/kibo/issues/new/choose">Report a problem or suggest an idea</a>
@@ -26,7 +26,7 @@
 </p>
 
 <p align="center">
-  <a href="README.md">Español</a> · <b>English</b>
+  <a href="README.md">Español</a> · <b>English</b> · <a href="README.pt-BR.md">Português (Brasil)</a>
 </p>
 
 ![Kibo with four Claude Code sessions working at the same time, and an Agent Hub team card](img/portada.png)
@@ -34,7 +34,7 @@
 > **This repository is Kibo’s public home:** an overview, the changelog and the place to leave your feedback.
 > The **[full documentation](docs/README.md)**, with all the screenshots, lives in this repo (in Spanish for now),
 > and every version with its changelog is in **[Releases](https://github.com/nexsoftgroup/kibo/releases)**.
-> The source code is not published here, and Kibo is downloaded **only** from that site.
+> The source code is not published here.
 > The app itself speaks English, Spanish and Brazilian Portuguese.
 
 ---
@@ -101,9 +101,9 @@ turns separate **Claude Code** sessions into **a team that works together**, in 
 
 ## Install
 
-Kibo installs for your user, inside your profile, and is downloaded **only** from
-[kibo.nexsoftgroup.com](https://kibo.nexsoftgroup.com). The installer speaks English, Spanish or Portuguese, following
-your system language.
+Kibo installs for your user, inside your profile. The double-click installer comes from
+[Releases](https://github.com/nexsoftgroup/kibo/releases/latest), and the terminal commands from kibo.nexsoftgroup.com. The installer
+speaks English, Spanish or Portuguese, following your system language.
 
 ### Windows
 

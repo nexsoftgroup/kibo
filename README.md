@@ -15,7 +15,7 @@
 </p>
 
 <p align="center">
-  <a href="https://kibo.nexsoftgroup.com"><b>Descargar</b></a> ·
+  <a href="https://github.com/nexsoftgroup/kibo/releases/latest"><b>Descargar</b></a> ·
   <a href="docs/README.md">Documentación</a> ·
   <a href="https://github.com/nexsoftgroup/kibo/releases">Versiones y novedades</a> ·
   <a href="https://github.com/nexsoftgroup/kibo/issues/new/choose">Reportar un problema o proponer una idea</a>
@@ -26,14 +26,14 @@
 </p>
 
 <p align="center">
-  <b>Español</b> · <a href="README.en.md">English</a>
+  <b>Español</b> · <a href="README.en.md">English</a> · <a href="README.pt-BR.md">Português (Brasil)</a>
 </p>
 
 ![Kibo con cuatro sesiones de Claude Code trabajando a la vez, y la tarjeta de un equipo de Agent Hub](img/portada.png)
 
 > **Este repositorio es la casa pública de Kibo:** un resumen, las novedades y el lugar para dejar tus comentarios.
 > La **[documentación completa](docs/README.md)**, con todas las capturas, está en este repo, y cada versión con sus novedades, en **[Releases](https://github.com/nexsoftgroup/kibo/releases)**.
-> El código fuente no se publica acá, y Kibo se descarga **sólo** desde ese sitio.
+> El código fuente no se publica acá.
 
 ---
 
@@ -99,8 +99,8 @@ escritorio que convierte sesiones sueltas de **Claude Code** en **un equipo que 
 
 ## Instalar
 
-Kibo se instala para tu usuario, dentro de tu perfil, y se descarga **sólo** desde
-[kibo.nexsoftgroup.com](https://kibo.nexsoftgroup.com).
+Kibo se instala para tu usuario, dentro de tu perfil. El instalador de doble clic se baja de
+[Releases](https://github.com/nexsoftgroup/kibo/releases/latest), y los comandos de la terminal, de kibo.nexsoftgroup.com.
 
 ### Windows
 
