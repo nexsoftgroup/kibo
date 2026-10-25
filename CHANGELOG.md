@@ -4,6 +4,22 @@ Lo que cambia en cada versión de Kibo. Las versiones siguen
 [versionado semántico](https://semver.org/lang/es/): `MAYOR.MENOR.ARREGLO`.
 
 
+## 1.0.3 · 2026-10-25
+
+Descarga y archivos: [Release v1.0.3](https://github.com/nexsoftgroup/kibo/releases/tag/v1.0.3).
+
+### Cambiado
+
+- **Las actualizaciones llegan desde GitHub** (Releases de NexSoft) y, si GitHub no responde, desde
+  kibo.nexsoftgroup.com. Siempre con la firma de NexSoft y el SHA-256.
+
+### Corregido
+
+- **El botón Agent Hub contaba de más:** decía, por ejemplo, «10 te esperan» cuando te esperaban 2, porque sumaba
+  agentes ya cerrados. Ahora cuenta lo mismo que las tarjetas de los equipos
+  ([#1](https://github.com/nexsoftgroup/kibo/issues/1)).
+- Se reforzó el control de las direcciones desde las que Kibo baja sus actualizaciones.
+
 ## Instalación desde GitHub · 2026-10-25
 
 Sin versión nueva de la app: cambia cómo se instala.
