@@ -4,6 +4,18 @@ Lo que cambia en cada versión de Kibo. Las versiones siguen
 [versionado semántico](https://semver.org/lang/es/): `MAYOR.MENOR.ARREGLO`.
 
 
+## Instalación desde GitHub · 2026-10-25
+
+Sin versión nueva de la app: cambia cómo se instala.
+
+- **Los comandos de la terminal ahora bajan todo de GitHub Releases** y, antes de abrir o instalar nada, comprueban la
+  firma de NexSoft y el SHA-256. Si GitHub no responde o algo no pasa esas comprobaciones, lo intentan con
+  kibo.nexsoftgroup.com, con las mismas comprobaciones.
+  - Windows: `irm https://github.com/nexsoftgroup/kibo/releases/latest/download/install.ps1 | iex`
+  - Linux y macOS: `curl -fsSL https://github.com/nexsoftgroup/kibo/releases/latest/download/install.sh | sh`
+- Los comandos anteriores, de kibo.nexsoftgroup.com, siguen funcionando y hacen lo mismo.
+
+
 ## 1.0.2 · 2026-10-24
 
 Descarga y archivos: [Release v1.0.2](https://github.com/nexsoftgroup/kibo/releases/tag/v1.0.2).
@@ -52,9 +64,9 @@ Primera versión pública, en **beta**: hecha y probada a fondo con Claude Code.
 
 ### Añadido
 
-- **Instalar desde la terminal, en Windows:** `irm https://kibo.nexsoftgroup.com/install.ps1 | iex` pide permiso antes de instalar cada cosa que falte (Git for Windows y Claude Code) y cancela si no lo autorizas; después baja el instalador de Kibo, comprueba su SHA-256 y lo abre. En español, inglés o portugués, según el idioma de Windows.
+- **Instalar desde la terminal, en Windows** (el comando de hoy está en [Instalar](README.md#instalar)): pide permiso antes de instalar cada cosa que falte (Git for Windows y Claude Code) y cancela si no lo autorizas; después baja el instalador de Kibo, comprueba su SHA-256 y lo abre. En español, inglés o portugués, según el idioma de Windows.
 
-- **Instalar desde la terminal, en Linux y macOS:** `curl -fsSL https://kibo.nexsoftgroup.com/install.sh | sh` hace las mismas preguntas, baja el paquete de Kibo del sitio, comprueba su SHA-256 y lo instala para tu usuario en `~/Kibo/kibo`, sin `sudo`. Probado en Ubuntu 24.04 (WSL); en macOS, experimental.
+- **Instalar desde la terminal, en Linux y macOS** (el comando de hoy está en [Instalar](README.md#instalar)): hace las mismas preguntas, baja el paquete de Kibo del sitio, comprueba su SHA-256 y lo instala para tu usuario en `~/Kibo/kibo`, sin `sudo`. Probado en Ubuntu 24.04 (WSL); en macOS, experimental.
 
 - **Barra de menús** arriba (Proyecto · Vista · Tema · Idioma · Ajustes · Kibo), con el proyecto activo, **Tareas** y **Navegador**; se maneja también con Alt o F10. En Windows reemplaza la barra de título del sistema sin perder los bordes, Snap, Win+flechas ni Alt+F4; en Linux queda el marco del sistema; en macOS los menús van en la barra de menús del sistema.
 

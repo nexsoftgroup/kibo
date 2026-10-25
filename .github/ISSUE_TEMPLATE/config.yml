@@ -1,10 +1,10 @@
 blank_issues_enabled: false
 contact_links:
   - name: Preguntas frecuentes
-    url: https://kibo.nexsoftgroup.com/docs/preguntas
+    url: https://github.com/nexsoftgroup/kibo/blob/main/docs/preguntas.md
     about: Mira si tu duda ya tiene respuesta.
   - name: Documentación de Kibo
-    url: https://kibo.nexsoftgroup.com/docs/
+    url: https://github.com/nexsoftgroup/kibo/blob/main/docs/README.md
     about: Instalación, primeros pasos y todas las funciones.
   - name: Un problema de seguridad
     url: https://kibo.nexsoftgroup.com/seguridad
