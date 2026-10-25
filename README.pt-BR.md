@@ -100,8 +100,8 @@ transforma sessões soltas do **Claude Code** em **uma equipe que trabalha junta
 
 ## Instalar
 
-O Kibo é instalado para o seu usuário, dentro do seu perfil. O instalador de clique duplo vem de
-[Releases](https://github.com/nexsoftgroup/kibo/releases/latest), e os comandos do terminal, de kibo.nexsoftgroup.com. O
+O Kibo é instalado para o seu usuário, dentro do seu perfil. Tudo vem de
+[Releases](https://github.com/nexsoftgroup/kibo/releases/latest): o instalador de clique duplo e o que os comandos do terminal usam. O
 instalador fala português, espanhol ou inglês, conforme o idioma do sistema.
 
 ### Windows
@@ -110,11 +110,11 @@ instalador fala português, espanhol ou inglês, conforme o idioma do sistema.
 aperte Enter:
 
 ```powershell
-irm https://kibo.nexsoftgroup.com/install.ps1 | iex
+irm https://github.com/nexsoftgroup/kibo/releases/latest/download/install.ps1 | iex
 ```
 
 **O que vai acontecer:** ele pergunta com qual IA você vai trabalhar, pede permissão antes de instalar cada coisa que
-faltar, baixa o Kibo do site, **confere que é o nosso (SHA-256)** e abre o instalador. Assim o aviso do Windows não
+faltar, baixa o Kibo do GitHub, **confere a assinatura da NexSoft e o SHA-256** e abre o instalador. Assim o aviso do Windows não
 aparece. O instalador mostra os [Termos de uso](https://kibo.nexsoftgroup.com/terminos#pt-BR) antes de instalar.
 
 **Prefere o instalador de clique duplo?**
@@ -130,10 +130,10 @@ está assinado: **Mais informações → Executar assim mesmo**.
 Abra um terminal, cole isto e aperte Enter:
 
 ```sh
-curl -fsSL https://kibo.nexsoftgroup.com/install.sh | sh
+curl -fsSL https://github.com/nexsoftgroup/kibo/releases/latest/download/install.sh | sh
 ```
 
-Ele faz as mesmas perguntas, baixa o Kibo do site, confere o SHA-256 e instala para o seu usuário em `~/Kibo/kibo`, sem
+Ele faz as mesmas perguntas, baixa o Kibo do GitHub, confere a assinatura e o SHA-256 e instala para o seu usuário em `~/Kibo/kibo`, sem
 `sudo`. No macOS é **experimental**: o código está escrito, mas ainda não foi testado num Mac de verdade. Se você
 testar, vai nos ajudar saber como foi.
 

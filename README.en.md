@@ -101,8 +101,8 @@ turns separate **Claude Code** sessions into **a team that works together**, in 
 
 ## Install
 
-Kibo installs for your user, inside your profile. The double-click installer comes from
-[Releases](https://github.com/nexsoftgroup/kibo/releases/latest), and the terminal commands from kibo.nexsoftgroup.com. The installer
+Kibo installs for your user, inside your profile. Everything comes from
+[Releases](https://github.com/nexsoftgroup/kibo/releases/latest): the double-click installer and what the terminal commands use. The installer
 speaks English, Spanish or Portuguese, following your system language.
 
 ### Windows
@@ -111,11 +111,11 @@ speaks English, Spanish or Portuguese, following your system language.
 this and press Enter:
 
 ```powershell
-irm https://kibo.nexsoftgroup.com/install.ps1 | iex
+irm https://github.com/nexsoftgroup/kibo/releases/latest/download/install.ps1 | iex
 ```
 
 **What happens:** it asks which AI you will work with, asks for permission before installing anything missing,
-downloads Kibo from the site, **checks it is ours (SHA-256)** and opens its installer. That way the Windows warning
+downloads Kibo from GitHub, **checks NexSoft’s signature and the SHA-256** and opens its installer. That way the Windows warning
 doesn’t appear. The installer shows you the [Terms of use](https://kibo.nexsoftgroup.com/terminos) before installing.
 
 **Prefer the double-click installer?**
@@ -130,10 +130,10 @@ signed yet: **More info → Run anyway**.
 Open a terminal, paste this and press Enter:
 
 ```sh
-curl -fsSL https://kibo.nexsoftgroup.com/install.sh | sh
+curl -fsSL https://github.com/nexsoftgroup/kibo/releases/latest/download/install.sh | sh
 ```
 
-It asks the same questions, downloads Kibo from the site, checks its SHA-256 and installs it for your user in
+It asks the same questions, downloads Kibo from GitHub, checks the signature and the SHA-256 and installs it for your user in
 `~/Kibo/kibo`, without `sudo`. On macOS it is **experimental**: the code is written, but it hasn’t been tested on a real
 Mac yet. If you try it, we’d love to know how it went.
 

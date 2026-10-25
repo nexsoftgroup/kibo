@@ -5,7 +5,7 @@
 
 Ese aviso es de **SmartScreen**, de Windows. Aparece con programas bajados de internet que **no tienen firma de código** o que todavía tienen **poca reputación** (pocas descargas registradas por Microsoft). Kibo está en los dos casos: es nuevo y **todavía no tiene firma de código de Microsoft**. El aviso no significa que Windows haya encontrado algo malo en el archivo.
 
-**Con el comando de la terminal no aparece:** `irm https://kibo.nexsoftgroup.com/install.ps1 | iex` baja el instalador, comprueba su SHA-256 y lo abre. [Ver cómo](instalar.md#windows-terminal).
+**Con el comando de la terminal no aparece:** `irm https://github.com/nexsoftgroup/kibo/releases/latest/download/install.ps1 | iex` baja el instalador de GitHub, comprueba la firma de NexSoft y el SHA-256 y lo abre. [Ver cómo](instalar.md#windows-terminal).
 
 Si prefieres el instalador con doble clic y quieres seguir:
 

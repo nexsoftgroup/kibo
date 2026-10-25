@@ -99,8 +99,8 @@ escritorio que convierte sesiones sueltas de **Claude Code** en **un equipo que 
 
 ## Instalar
 
-Kibo se instala para tu usuario, dentro de tu perfil. El instalador de doble clic se baja de
-[Releases](https://github.com/nexsoftgroup/kibo/releases/latest), y los comandos de la terminal, de kibo.nexsoftgroup.com.
+Kibo se instala para tu usuario, dentro de tu perfil. Todo se baja de
+[Releases](https://github.com/nexsoftgroup/kibo/releases/latest): el instalador de doble clic y lo que usan los comandos de la terminal.
 
 ### Windows
 
@@ -108,11 +108,11 @@ Kibo se instala para tu usuario, dentro de tu perfil. El instalador de doble cli
 esto y presiona Enter:
 
 ```powershell
-irm https://kibo.nexsoftgroup.com/install.ps1 | iex
+irm https://github.com/nexsoftgroup/kibo/releases/latest/download/install.ps1 | iex
 ```
 
 **Qué va a pasar:** te pregunta con qué IA vas a trabajar, te pide permiso antes de instalar cada cosa que falte, baja
-Kibo del sitio, **comprueba que es el nuestro (SHA-256)** y abre su instalador. Así no aparece el aviso de Windows. El
+Kibo de GitHub, **comprueba la firma de NexSoft y el SHA-256** y abre su instalador. Así no aparece el aviso de Windows. El
 instalador te muestra los [Términos de uso](https://kibo.nexsoftgroup.com/terminos) antes de instalar.
 [Paso a paso](docs/instalar.md).
 
@@ -130,10 +130,10 @@ todavía no está firmado: **Más información → Ejecutar de todas formas**.
 Abre una terminal, pega esto y presiona Enter:
 
 ```sh
-curl -fsSL https://kibo.nexsoftgroup.com/install.sh | sh
+curl -fsSL https://github.com/nexsoftgroup/kibo/releases/latest/download/install.sh | sh
 ```
 
-Hace las mismas preguntas, baja Kibo del sitio, comprueba su SHA-256 y lo instala para tu usuario en `~/Kibo/kibo`,
+Hace las mismas preguntas, baja Kibo de GitHub, comprueba la firma y el SHA-256 y lo instala para tu usuario en `~/Kibo/kibo`,
 sin `sudo`. En macOS es **experimental**: el código está escrito, pero todavía no se probó en una Mac de verdad. Si lo
 pruebas, nos sirve saber qué pasó.
 
