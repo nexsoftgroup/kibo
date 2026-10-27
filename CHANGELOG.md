@@ -4,6 +4,56 @@ Lo que cambia en cada versión de Kibo. Las versiones siguen
 [versionado semántico](https://semver.org/lang/es/): `MAYOR.MENOR.ARREGLO`.
 
 
+## 1.0.4 · 2026-10-27
+
+Descarga y archivos: [Release v1.0.4](https://github.com/nexsoftgroup/kibo/releases/tag/v1.0.4).
+
+### Cambiado
+
+- **Lenguaje neutro en los tres idiomas:** en español, «tú» sin voseo ni regionalismos; en inglés, internacional; en
+  portugués de Brasil, «você» estándar. Incluye los mensajes que Kibo les escribe a la MAIN y a los peers. También
+  cambian algunos nombres: «clave SSH» (antes «llave»), el estado «Inactiva» (antes «Tranquila») y el nombre de la
+  extensión en inglés y portugués («Kibo — point out», «Kibo — apontar») ([#10](https://github.com/nexsoftgroup/kibo/issues/10)).
+- **La MAIN evita darle el mismo archivo a dos peers a la vez:** lo tiene como norma en su rol.
+- **Cada sesión que abre Kibo sabe trabajar en equipo:** al empezar recibe cómo derivar, ver el equipo y no pisarse.
+  La MAIN sabe que los peers se derivan tareas sin pasar por ella.
+- **Términos de uso 1.1 y política de privacidad:** ahora nombran a GitHub (las versiones publicadas por NexSoft) como
+  el lugar donde Kibo busca y descarga sus actualizaciones, con kibo.nexsoftgroup.com de respaldo. Es así desde la 1.0.3.
+
+### Añadido
+
+- **Los agentes ya no se pisan:** si dos peers del mismo proyecto quieren editar el mismo archivo a la vez, Kibo frena
+  al segundo, le dice quién lo está editando y lo deja esperando. Cuando el primero termina su turno, Kibo le avisa al
+  segundo que ya puede seguir. Un archivo nunca queda bloqueado para siempre: se libera solo a los 15 minutos sin
+  cambios. Sólo afecta a las sesiones que abre Kibo ([#2](https://github.com/nexsoftgroup/kibo/issues/2)).
+- **Los agentes se derivan tareas entre sí:** cualquier agente puede pasarle una tarea a otro del mismo proyecto,
+  aunque esté inactivo: Kibo lo despierta con el mensaje. Antes, si el agente que hacía falta estaba inactivo, la
+  tarea se cortaba. Todo queda en el registro del equipo, y cualquier agente puede ver quién está en el equipo y en
+  qué estado. Si su trabajo no se cruza, el que tiene un archivo puede cederlo antes. No se despierta una Wiki
+  detenida ni una sesión abierta en otra ventana ([#3](https://github.com/nexsoftgroup/kibo/issues/3)).
+- **Pestañas agrupadas por proyecto,** como los grupos del navegador. Con pestañas de varios proyectos abiertas, cada
+  proyecto tiene su rótulo en la barra, con su color, su nombre y cuántas pestañas tiene. Un clic despliega sus pestañas
+  y otro las pliega. La pestaña que estás mirando y las fijadas 📌 quedan siempre a la vista, y Kibo recuerda qué
+  proyectos dejaste desplegados ([#4](https://github.com/nexsoftgroup/kibo/issues/4)).
+- **Varias capturas de una vez, como en WhatsApp:** con el editor de la captura abierto, Ctrl+V suma otra a la tira de
+  abajo. Cada una tiene sus propios dibujos y su comentario; un clic en la miniatura la edita y su ✕ la saca.
+  **Adjuntar** las manda todas en orden, cada una con su comentario ([#5](https://github.com/nexsoftgroup/kibo/issues/5)).
+- **Arrastrar archivos y carpetas del árbol a la consola:** su referencia queda escrita, sin enviar. Para Claude y
+  Gemini va como `@ruta`, que la IA lee como archivo. También funciona en la cuadrícula y en la conversación ([#6](https://github.com/nexsoftgroup/kibo/issues/6)).
+- **Un color para cada proyecto:** desde su menú ⋯ → **Color del proyecto…** eliges cian, verde, ámbar, violeta,
+  naranja, rojo o automático. Se usa en el panel de proyectos, en Agent Hub, en el mapa de equipos y en los rótulos de
+  las pestañas ([#7](https://github.com/nexsoftgroup/kibo/issues/7)).
+- **Elegir la MAIN desde Agent Hub:** el aviso «Sin MAIN» de la tarjeta de un equipo (y de su detalle) ahora es un
+  botón. Abre las sesiones del proyecto para que elijas cuál es la MAIN, o te deja crear una nueva ([#8](https://github.com/nexsoftgroup/kibo/issues/8)).
+- **Pegar capturas y archivos en el chat del equipo:** en el chat de Agent Hub, Ctrl+V con una imagen abre el editor
+  de capturas (puedes sumar varias y comentar cada una) y los archivos copiados del Explorador se adjuntan al mensaje.
+  Antes no hacía nada ([#9](https://github.com/nexsoftgroup/kibo/issues/9)).
+
+### Corregido
+
+- **El chat del equipo muestra quién está trabajando,** aunque no sea la MAIN.
+- **Esc** en el editor de capturas ya no cierra Agent Hub.
+
 ## 1.0.3 · 2026-10-25
 
 Descarga y archivos: [Release v1.0.3](https://github.com/nexsoftgroup/kibo/releases/tag/v1.0.3).

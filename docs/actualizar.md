@@ -8,9 +8,9 @@ La primera línea del menú **Kibo** dice qué versión tienes, por ejemplo «Ki
 
 ## Cómo se actualiza
 
-1. **Kibo se fija si hay una versión nueva** en `kibo.nexsoftgroup.com`, al abrirse y cada 6 horas. El sitio publica cuál es la última versión: su número, su fecha, sus novedades y la huella SHA-256 de su instalador. Se apaga en **⚙ Configuración**.
+1. **Kibo se fija si hay una versión nueva** en las [versiones publicadas en GitHub](https://github.com/nexsoftgroup/kibo/releases) (y, si GitHub no responde, en `kibo.nexsoftgroup.com`), al abrirse y cada 6 horas. Cada versión publica cuál es la última: su número, su fecha, sus novedades y la huella SHA-256 de su instalador. Se apaga en **⚙ Configuración**.
 2. **Si hay una nueva, te avisa:** «Hay una versión nueva de Kibo: X», con **Leer más** (sus [novedades](https://github.com/nexsoftgroup/kibo/releases)) y **No avisarme de esta**. Tocando el aviso, o en **Kibo → Buscar versión nueva…**, está **Actualizar ahora**.
-3. **Actualizar ahora** descarga el instalador nuevo desde `kibo.nexsoftgroup.com`, comprueba con su SHA-256 que no esté alterado y lo abre.
+3. **Actualizar ahora** descarga el instalador nuevo del mismo lugar, comprueba la firma de NexSoft y su SHA-256 para saber que no está alterado, y lo abre. *Las versiones 1.0.0 a 1.0.2 buscan y descargan sólo de `kibo.nexsoftgroup.com`.*
 4. **El instalador ve que Kibo ya está instalado** y te lo dice: «Kibo 1.0.0 está instalado en esta PC. Se va a actualizar a la 1.1.0; tus proyectos, conversaciones y configuración se conservan». El botón dice **Actualizar**.
 
 > **Antes de actualizar, el instalador cierra Kibo y sus sesiones**
@@ -21,11 +21,17 @@ La primera línea del menú **Kibo** dice qué versión tienes, por ejemplo «Ki
 
 ## Actualizar a mano
 
-Descarga el instalador desde [kibo.nexsoftgroup.com](https://kibo.nexsoftgroup.com/#descargar) y ábrelo: detecta la versión que tienes y la actualiza. Tampoco hace falta desinstalar antes.
+Descarga el instalador de la [última versión](https://github.com/nexsoftgroup/kibo/releases/latest) (o vuelve a correr el [comando de la terminal](instalar.md)) y ábrelo: detecta la versión que tienes y la actualiza. Tampoco hace falta desinstalar antes.
 
 ## Linux y macOS
 
-Por ahora, descarga el paquete desde [kibo.nexsoftgroup.com](https://kibo.nexsoftgroup.com/#descargar) y ejecuta `install.sh`. Para actualizar, lo mismo: se instala encima y tus datos se conservan.
+Vuelve a correr el comando de la terminal:
+
+```sh
+curl -fsSL https://github.com/nexsoftgroup/kibo/releases/latest/download/install.sh | sh
+```
+
+Se instala encima y tus datos se conservan.
 
 ## Lo que nunca hace
 

@@ -4,7 +4,7 @@ La guía completa, función por función. Si recién empiezas, mira antes [Prime
 
 **En esta página**
 
-[Agent Hub: tus equipos de agentes](#agent-hub-tus-equipos-de-agentes) · [Proyectos y sesiones](#proyectos-y-sesiones) · [La ventana: barra de menús, barra de estado y área de trabajo](#la-ventana-barra-de-menus-barra-de-estado-y-area-de-trabajo) · [Las pestañas](#las-pestanas) · [La consola y la conversación](#la-consola-y-la-conversacion) · [Volver a lo hablado por fecha](#volver-a-lo-hablado-por-fecha) · [Las sesiones siguen aunque cierres Kibo](#las-sesiones-siguen-aunque-cierres-kibo) · [Paneles a tu medida](#paneles-a-tu-medida) · [Agentes y el recuadro de abajo](#agentes-y-el-recuadro-de-abajo) · [Buscar en todo (Ctrl+K)](#buscar-en-todo-ctrlk) · [Ver un archivo donde está la conversación](#ver-un-archivo-donde-esta-la-conversacion) · [Comentar y «¿Para qué es esto?»](#comentar-y-para-que-es-esto) · [Consultas sin interrumpir al agente (💬)](#consultas-sin-interrumpir-al-agente) · [Divide el área de trabajo como la necesites](#dividi-el-area-de-trabajo-como-la-necesites) · [VS Code completo, adentro](#vs-code-completo-adentro) · [Documentos y capturas en la conversación](#documentos-y-capturas-en-la-conversacion) · [El navegador: señalar cosas de la web](#el-navegador-senalar-cosas-de-la-web) · [Tareas programadas](#tareas-programadas) · [El equipo: tus agentes de un vistazo](#el-equipo-tus-agentes-de-un-vistazo) · [Proyectos en un servidor (VPS)](#proyectos-en-un-servidor-vps) · [Un proyecto nuevo, con su Wiki que se escribe sola](#un-proyecto-nuevo-con-su-wiki-que-se-escribe-sola) · [Personalidad: lo que Claude tiene siempre presente](#personalidad-lo-que-claude-tiene-siempre-presente) · [Avisos de escritorio](#avisos-de-escritorio) · [Atajos de teclado a tu gusto](#atajos-de-teclado-a-tu-gusto) · [Menús, idioma y tema](#menus-idioma-y-tema) · [Atajos](#atajos)
+[Agent Hub: tus equipos de agentes](#agent-hub-tus-equipos-de-agentes) · [Proyectos y sesiones](#proyectos-y-sesiones) · [La ventana: barra de menús, barra de estado y área de trabajo](#la-ventana-barra-de-menus-barra-de-estado-y-area-de-trabajo) · [Las pestañas](#las-pestanas) · [La consola y la conversación](#la-consola-y-la-conversacion) · [Volver a lo hablado por fecha](#volver-a-lo-hablado-por-fecha) · [Las sesiones siguen aunque cierres Kibo](#las-sesiones-siguen-aunque-cierres-kibo) · [Paneles a tu medida](#paneles-a-tu-medida) · [Agentes y el recuadro de abajo](#agentes-y-el-recuadro-de-abajo) · [Buscar en todo (Ctrl+K)](#buscar-en-todo-ctrlk) · [Ver un archivo donde está la conversación](#ver-un-archivo-donde-esta-la-conversacion) · [Comentar y «¿Para qué es esto?»](#comentar-y-para-que-es-esto) · [Consultas sin interrumpir al agente (💬)](#consultas-sin-interrumpir-al-agente) · [Divide el área de trabajo como la necesites](#divide-el-area-de-trabajo-como-la-necesites) · [VS Code completo, adentro](#vs-code-completo-adentro) · [Documentos y capturas en la conversación](#documentos-y-capturas-en-la-conversacion) · [El navegador: señalar cosas de la web](#el-navegador-senalar-cosas-de-la-web) · [Tareas programadas](#tareas-programadas) · [El equipo: tus agentes de un vistazo](#el-equipo-tus-agentes-de-un-vistazo) · [Proyectos en un servidor (VPS)](#proyectos-en-un-servidor-vps) · [Un proyecto nuevo, con su Wiki que se escribe sola](#un-proyecto-nuevo-con-su-wiki-que-se-escribe-sola) · [Personalidad: lo que Claude tiene siempre presente](#personalidad-lo-que-claude-tiene-siempre-presente) · [Avisos de escritorio](#avisos-de-escritorio) · [Atajos de teclado a tu gusto](#atajos-de-teclado-a-tu-gusto) · [Menús, idioma y tema](#menus-idioma-y-tema) · [Atajos](#atajos)
 
 <a name="agent-hub-tus-equipos-de-agentes"></a>
 ## Agent Hub: tus equipos de agentes
@@ -40,23 +40,25 @@ Todo va por el **chat del equipo**, a la derecha:
 - **Para:** a quién le hablas: **Todos** (la MAIN del equipo), **un agente** (un clic en su fila: le llega directo y, si dormía, se despierta) o **varios equipos** a la vez. Se recuerda.
 - **Ordenar** manda un mensaje de verdad: entra en la conversación y la MAIN se pone a trabajar. **Consultar** es una pregunta al costado, como `/btw`, que no la interrumpe; si te gusta la respuesta, **Mandar como orden**.
 - Con el mensaje van 📎 **adjuntos** (archivos, capturas), 🌐 **lo que señalaste en el navegador** y ↩ **una referencia a su última respuesta**.
+- **Ctrl+V en la caja del chat:** una imagen abre el [editor de capturas](#cada-version-queda-guardada-en-su-proyecto), donde puedes sumar varias y comentar cada una antes de adjuntarlas; los archivos que copiaste en el Explorador se adjuntan directo, y el texto se pega normal. *Desde la 1.0.4.*
 - **Abrir su consola** te lleva a la sesión de verdad, y el menú **…** tiene nuevo peer, despertar, renombrar y hacer MAIN.
 
 <a name="como-se-comunican"></a>
 ### Cómo se comunican
 
 - **Tú → MAIN:** tu mensaje le llega marcado «[tú desde Agent Hub]».
+- **Peer → peer:** cualquier agente puede derivarle una tarea a otro del mismo proyecto con `hablar <peer> "mensaje"`, aunque esté inactivo: Kibo lo despierta con el mensaje. Con `equipo` ve quién está en el proyecto y en qué estado. No se despierta una Wiki detenida ni una sesión abierta en otra ventana. Cada sesión que abre Kibo recibe estas instrucciones al empezar, y la MAIN sabe que los peers se derivan tareas sin pasar por ella. *Desde la 1.0.4.*
 - **MAIN → peers:** la MAIN no lanza procesos: le **pide a Kibo** listar, despertar, crear o escribirle a un peer, y Kibo lo hace. Kibo **comprueba que el encargo le llegó** y, si no, lo reintenta y le avisa a la MAIN.
 - **Peers → MAIN:** la MAIN les pide que le informen al terminar, en pocas líneas. Además, **Kibo le avisa sola** cuando un peer termina, pide permiso o se traba (diez minutos trabajando sin novedades): agrupa los avisos que llegan juntos, espera a que la MAIN esté libre, no repite el mismo aviso y no la despierta si el peer ya le informó. Quieta, la MAIN no gasta: sólo se mueve cuando hay novedades de lo que ella encargó.
 - **MAIN ↔ MAIN:** la MAIN de un proyecto le puede consultar o pedir algo a la de otro, siempre a través de Kibo. Sólo entre MAIN (los peers no cruzan de proyecto), con un tope por par para evitar bucles.
 - **Varios equipos a la vez:** con **Lidera**, una MAIN lidera y las demás colaboran con ella. Cada una sabe, antes de la orden, quién lidera; las que colaboran le informan a la que lidera, y esa te contesta con el resultado de todas.
 - **Todo queda a la vista:** quién despertó, creó o le escribió a qué peer, cuándo y por qué, en el chat del equipo y en **Mensajes entre agentes**.
 
-<a name="como-orquesta-la-main"></a>
-**Lo que escribes en el chat del equipo aparece al instante**, con «enviando…», sin esperar a que la MAIN o el peer lo reciba. Si no se pudo mandar, dice «no se envió» y el texto vuelve a la caja para que lo reintentes. *Desde la 1.0.1.*
+**Lo que escribes en el chat del equipo aparece al instante**, con «enviando…», sin esperar a que la MAIN o el peer lo reciba. Si no se pudo mandar, dice «no se envió» y el texto vuelve a la caja para que lo reintentes. *Desde la 1.0.1.* El chat también muestra **quién del equipo está trabajando**, aunque no sea la MAIN. *Desde la 1.0.4.*
 
 ![El chat del equipo con el último mensaje en «enviando…»](img/chat-enviando.png)
 
+<a name="como-orquesta-la-main"></a>
 ### Cómo orquesta la MAIN
 
 Orquestar es algo que hace **Claude**; lo que lo vuelve ordenado es **la configuración de Kibo**. Al empezar, Kibo le da a la MAIN su **rol**: qué proyecto tiene a cargo, qué herramientas tiene para manejar a sus peers y con qué reglas:
@@ -70,9 +72,25 @@ Orquestar es algo que hace **Claude**; lo que lo vuelve ordenado es **la configu
 - **Siempre viva:** con el proyecto abierto, Kibo la levanta y, si se cae, la relanza; si no arranca después de varios intentos, te avisa con **Reintentar**.
 - **Memoria:** si le comprimieron la conversación, puede volver a lo hablado por fecha con `historial`.
 
-**La MAIN de cada proyecto se elige** con clic derecho en una sesión del panel → **Hacer MAIN del proyecto**, o desde el menú **…** del chat; si mandas algo a un equipo sin MAIN, Kibo te ofrece crearla. Lleva el chip **MAIN** en el panel, en su pestaña y en Agent Hub.
+**La MAIN de cada proyecto se elige** con clic derecho en una sesión del panel → **Hacer MAIN del proyecto**, o desde el menú **…** del chat; si mandas algo a un equipo sin MAIN, Kibo te ofrece crearla. Si un equipo no tiene MAIN, su tarjeta (y su detalle) muestra el botón **Sin MAIN**: abre las sesiones del proyecto para que elijas una, o **Crear una MAIN nueva**. *Desde la 1.0.4.* Lleva el chip **MAIN** en el panel, en su pestaña y en Agent Hub.
 
-<a name="proyectos-y-sesiones"></a>
+![La tarjeta de un equipo sin MAIN, con el menú para elegirla o crear una nueva](img/sin-main.png)
+
+<a name="los-agentes-no-se-pisan"></a>
+### Los agentes no se pisan
+
+*Desde la 1.0.4.* Cuando varios peers trabajan en el mismo proyecto, dos podrían querer editar el mismo archivo a la vez. Kibo lo evita:
+
+- **El segundo espera:** si un peer quiere editar un archivo que otro está editando, Kibo lo frena, le dice quién lo tiene y lo deja esperando. Cuando el primero termina su turno, Kibo le avisa al segundo que ya puede seguir.
+- **Nada queda bloqueado para siempre:** un archivo se libera solo a los 15 minutos sin cambios.
+- **Los peers se pueden hablar** para coordinarse, con `hablar <peer> "mensaje"`. Queda en el registro del equipo, a la vista.
+- **Ceder antes:** si su trabajo no se cruza, el que tiene el archivo lo libera con `candado ceder <archivo>`. `candado lista` muestra quién tiene cada archivo.
+- **La MAIN lo previene:** evita darle el mismo archivo a dos peers a la vez.
+
+Sólo afecta a las sesiones que abre Kibo. Las sesiones de Claude que abres por tu cuenta no cambian, y Kibo no toca la configuración de ningún proyecto. Para que cada peer trabaje en su propia copia del repo, está el [worktree por peer](worktree-por-peer.md).
+
+![La consola de un peer: Kibo lo frena porque otro peer está editando el mismo archivo, se coordinan con «hablar» y Kibo avisa cuando el archivo queda libre](img/archivo-en-uso.png)
+
 ### Sin tope de agentes: la MAIN cuida el costo
 
 *Desde la 1.0.1.* No hay un límite de agentes vivos por proyecto: creas o despiertas todos los peers que necesites. Pero cada peer vivo es una sesión de la IA que **gasta de tu plan y usa memoria de la PC**, y la MAIN lo sabe:
@@ -83,6 +101,7 @@ Orquestar es algo que hace **Claude**; lo que lo vuelve ordenado es **la configu
 
 ![Agent Hub con la tarjeta de un equipo: agentes trabajando, libres y en pausa](img/agent-hub-libres.png)
 
+<a name="proyectos-y-sesiones"></a>
 ## Proyectos y sesiones
 
 ![Panel de proyectos](img/02-proyectos.png)
@@ -97,7 +116,7 @@ Orquestar es algo que hace **Claude**; lo que lo vuelve ordenado es **la configu
 - **Cada proyecto recuerda su vista:** su cuadrícula y qué pestaña mirabas.
 
 
-<a name="la-ventana-barra-de-menus-barra-de-estado-y-area-de-trabajo"></a>
+<a name="el-menu-de-cada-proyecto"></a>
 ### El menú ⋯ de cada proyecto
 
 *Desde la 1.0.1.* Cada proyecto de la lista tiene un menú **⋯** (el mismo del clic derecho) con:
@@ -105,12 +124,14 @@ Orquestar es algo que hace **Claude**; lo que lo vuelve ordenado es **la configu
 - **Renombrar…** y **Cerrar proyecto**;
 - **Wiki: detener** — cierra la sesión de la Wiki de ese proyecto para que **no gaste tokens**. Kibo deja de pasarle conversaciones y la MAIN ya no la ve ni la usa;
 - **Wiki: activar** — la retoma donde quedó, con lo que ya había documentado;
+- **Color del proyecto…** — eliges cian, verde, ámbar, violeta, naranja, rojo o automático. Ese color se usa en el panel de proyectos, en Agent Hub, en el mapa de equipos y en los rótulos de las pestañas. *Desde la 1.0.4.*
 - **Worktree por peer** — cada peer en su propia copia del repo y en su rama, y desde el mismo menú integras o quitas su trabajo. *Desde la 1.0.2.* [Cómo funciona](worktree-por-peer.md).
 
 La Wiki se decide **por proyecto**: puedes tenerla apagada en uno y activa en otro.
 
 ![El menú ⋯ de un proyecto con Wiki, Worktree por peer, Renombrar y Cerrar](img/menu-proyecto.png)
 
+<a name="la-ventana-barra-de-menus-barra-de-estado-y-area-de-trabajo"></a>
 ## La ventana: barra de menús, barra de estado y área de trabajo
 
 ![La ventana de Kibo: arriba la barra de menús, en el centro la consola de la sesión con su barra, abajo la barra de estado](img/25-solo-consola.png)
@@ -129,7 +150,10 @@ La Wiki se decide **por proyecto**: puedes tenerla apagada en uno y activa en ot
 - **Una solapa por sesión** del proyecto activo, en una sola fila: la activa queda unida al área de trabajo. Si no entran, **‹ ›** (o la rueda) corren la fila y **⌄** muestra la lista de todas. Los nombres largos se cortan con «…».
 - **Grupos de pestañas,** como en los navegadores: clic derecho → **Agregar a un grupo nuevo**, con nombre y color. Un clic en la etiqueta del grupo lo pliega; se arrastran pestañas para sumarlas o sacarlas. Cada proyecto guarda los suyos.
 - Clic derecho → **📌 Fijar** deja una a la vista en todos los proyectos.
+- **Pestañas agrupadas por proyecto,** como los grupos del navegador. Con pestañas de varios proyectos abiertas, cada proyecto tiene su rótulo en la barra, con su color, su nombre y cuántas pestañas tiene. Un clic despliega sus pestañas a la derecha y otro las pliega. La pestaña que estás mirando y las fijadas 📌 quedan siempre a la vista, y Kibo recuerda qué proyectos dejaste desplegados. *Desde la 1.0.4.*
 - A la derecha de la fila quedan siempre en el mismo lugar **＋** (pestaña nueva), **⊞** (cuadrícula) y **💬** (consultas).
+
+![Pestañas agrupadas por proyecto: «tienda-web» desplegado con sus tres pestañas y «api-pagos» plegado](img/pestanas-por-proyecto.png)
 
 <a name="la-consola-y-la-conversacion"></a>
 ## La consola y la conversación
@@ -222,8 +246,11 @@ Los resultados van agrupados por tipo. Con ↑ ↓ y Enter (o un clic) te lleva:
 ![Un archivo abierto al lado de la consola](img/03-archivo-al-lado.png)
 
 - **A la derecha está el árbol de archivos del proyecto:** buscar, crear, renombrar, mover, borrar.
+- **Arrastra un archivo o una carpeta del árbol a la consola** y su referencia queda escrita, sin enviar. Para Claude y Gemini se escribe como `@ruta`, que la IA lee como archivo. Si la ruta tiene espacios o es de otro proyecto, va completa y entre comillas. También funciona en la cuadrícula y en la conversación. *Desde la 1.0.4.*
 - **Con la conversación a la vista,** un clic en un archivo lo abre **en el lugar de la conversación**, con el editor de VS Code, y la consola sigue al lado.
 - **En la barra del área de trabajo eliges** «Historial de conversación» o el archivo. **⤢** lo abre grande; **Ctrl+S** guarda.
+
+![Un archivo arrastrado del árbol a la consola: su referencia @ruta queda escrita, sin enviar](img/arrastrar-ruta.png)
 
 <a name="comentar-y-para-que-es-esto"></a>
 ## Comentar y «¿Para qué es esto?»
@@ -248,7 +275,7 @@ Al seleccionar texto en el editor aparece una barrita con dos botones:
 - **Mandar al agente** convierte lo que tengas en la caja, o la última respuesta, en un mensaje de verdad en su consola.
 - **Cada consulta se guarda** en `<proyecto>/Conversaciones/Consultas/`, y el botón de historial del chat las vuelve a abrir.
 
-<a name="dividi-el-area-de-trabajo-como-la-necesites"></a>
+<a name="divide-el-area-de-trabajo-como-la-necesites"></a>
 ## Divide el área de trabajo como la necesites
 
 El centro de Kibo se arma según lo que estés haciendo, y cada proyecto recuerda cómo lo dejaste:
@@ -312,7 +339,10 @@ Antes de adjuntar una imagen se abre **el editor**:
 
 - herramientas para marcarle al agente qué mirar: lápiz, flecha, línea, rectángulo, círculo y texto, en colores;
 - **Ctrl+Z** deshace;
-- **un cuadro para el mensaje:** **Enter** adjunta la imagen con tu texto, **Ctrl+Enter** la adjunta y la envía, y **Shift+Enter** hace un salto de línea.
+- **un cuadro para el mensaje:** **Enter** adjunta la imagen con tu texto, **Ctrl+Enter** la adjunta y la envía, y **Shift+Enter** hace un salto de línea;
+- **varias capturas de una vez, como en WhatsApp:** con el editor abierto, **Ctrl+V** suma otra captura a la tira de abajo. Cada una tiene sus propios dibujos y su comentario. Haz clic en una miniatura para editarla o en su **✕** para sacarla. **Adjuntar** las manda todas en orden, cada una con su comentario, y las envía si escribiste algo. *Desde la 1.0.4.*
+
+![El editor con tres capturas en la tira de abajo, la tercera elegida y su comentario](img/capturas-varias.png)
 
 <a name="el-navegador-senalar-cosas-de-la-web"></a>
 ## El navegador: señalar cosas de la web
@@ -400,8 +430,8 @@ Abajo a la izquierda, **Equipo en vivo** dibuja los agentes del proyecto activo 
 **＋ Proyecto → En un servidor (VPS)** abre un asistente.
 
 - **Pide:** nombre, servidor, puerto, usuario y carpeta.
-- **Llave:** **＋ Crear llave** genera una llave SSH, **Instalar la llave en el servidor** la instala (la contraseña se escribe una sola vez, en la terminal) y **Probar conexión** dice si conecta, si está el CLI y si existe la carpeta.
-- **Las sesiones corren en el servidor** y se ven en su consola. Kibo entra **sólo con llave SSH:** la contraseña no se guarda nunca.
+- **Clave:** **＋ Crear clave** genera una clave SSH, **Instalar la clave en el servidor** la instala (la contraseña se escribe una sola vez, en la terminal) y **Probar conexión** dice si conecta, si está el CLI y si existe la carpeta.
+- **Las sesiones corren en el servidor** y se ven en su consola. Kibo entra **sólo con clave SSH:** la contraseña no se guarda nunca.
 
 <a name="un-proyecto-nuevo-con-su-wiki-que-se-escribe-sola"></a>
 ## Un proyecto nuevo, con su Wiki que se escribe sola

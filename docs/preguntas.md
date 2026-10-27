@@ -38,7 +38,7 @@ No. Kibo lee la conversación del historial que Claude Code ya guarda en tu PC, 
 
 ## ¿Cómo me entero de una versión nueva?
 
-Kibo te avisa solo: al abrirse y cada 6 horas se fija en `kibo.nexsoftgroup.com` si hay una versión nueva y, si la hay, te muestra «Hay una versión nueva de Kibo: X». Tocándolo, **Actualizar ahora**. Se actualiza encima, sin desinstalar, y tus datos se conservan. [Ver cómo se actualiza](actualizar.md).
+Kibo te avisa solo: al abrirse y cada 6 horas se fija en GitHub (o, de respaldo, en `kibo.nexsoftgroup.com`) si hay una versión nueva y, si la hay, te muestra «Hay una versión nueva de Kibo: X». Tocándolo, **Actualizar ahora**. Se actualiza encima, sin desinstalar, y tus datos se conservan. [Ver cómo se actualiza](actualizar.md).
 
 ## ¿Necesito Git?
 

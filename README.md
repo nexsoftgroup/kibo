@@ -91,7 +91,7 @@ escritorio que convierte sesiones sueltas de **Claude Code** en **un equipo que 
 | **Capturas al instante** | Pegas o arrastras una captura, la marcas con flechas y recuadros, y le llega al agente. |
 | **Editor y VS Code** | Los archivos con el editor de VS Code, y VS Code completo en una pestaña si lo quieres. |
 | **Atajos para todo** | En su propia ventana (Ctrl+Alt+S), con buscador. |
-| **Servidores por SSH** | Sesiones que corren en otra máquina. Sólo con llave SSH: las contraseñas no se guardan. |
+| **Servidores por SSH** | Sesiones que corren en otra máquina. Sólo con clave SSH: las contraseñas no se guardan. |
 | **Temas e idiomas** | Kibo, Oscuro y Claro. En español, inglés y portugués (Brasil). |
 | **Avisos de escritorio** | Opcionales: cuando un agente termina o te necesita. |
 

@@ -38,7 +38,7 @@ Con Claude Code, **💬** en la barra del área de trabajo (o <kbd>Ctrl+Alt+H</k
 
 Con varios proyectos y varios agentes, **Agent Hub** (la tarjeta de arriba del panel izquierdo, o <kbd>Ctrl+Shift+T</kbd>) muestra **una tarjeta por equipo**: cada proyecto con su MAIN, sus agentes, cuántos trabajan o te esperan, y lo último que pasó. **Ver más** abre el detalle del equipo: cómo va hoy, cada agente con lo que hizo y una línea de tiempo. A la derecha, el **chat del equipo**: eliges **Para** (todos, un agente o varios equipos) y mandas una **orden** o una **consulta**.
 
-Elige una MAIN con clic derecho en una sesión → **Hacer MAIN del proyecto**. La MAIN y sus peers son siempre sesiones de Claude Code; la MAIN reparte el trabajo a los demás agentes del proyecto. Los permisos los sigues aprobando tú.
+Elige una MAIN con clic derecho en una sesión → **Hacer MAIN del proyecto**, o con el botón **Sin MAIN** de la tarjeta del equipo en Agent Hub. La MAIN y sus peers son siempre sesiones de Claude Code; la MAIN reparte el trabajo a los demás agentes del proyecto. Los permisos los sigues aprobando tú.
 
 ![Agent Hub: una tarjeta por equipo, el mapa de equipos y el chat del equipo](img/17-agent-hub.png)
 
