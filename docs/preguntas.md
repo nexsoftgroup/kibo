@@ -40,6 +40,13 @@ No. Kibo lee la conversación del historial que Claude Code ya guarda en tu PC, 
 
 Kibo te avisa solo: al abrirse y cada 6 horas se fija en GitHub si hay una versión nueva y, si la hay, te muestra «Hay una versión nueva de Kibo: X». Tocándolo, **Actualizar ahora**. Se actualiza encima, sin desinstalar, y tus datos se conservan. [Ver cómo se actualiza](actualizar.md).
 
+<a name="todo-en-github"></a>
+## ¿Dónde se publican las versiones de Kibo?
+
+Desde la 1.0.5 (28/10/2026), **todas las versiones de Kibo se publican sólo en [GitHub](https://github.com/nexsoftgroup/kibo/releases)**: el instalador, el comando de la terminal, las novedades y las actualizaciones. kibo.nexsoftgroup.com ya no aloja instaladores. Así cada versión queda en un solo lugar, con sus archivos, sus novedades y su huella SHA-256, y es más fácil saber qué cambió y cuándo.
+
+**Si Kibo te dice «no pude consultar kibo.nexsoftgroup.com»,** tienes la 1.0.0, la 1.0.1 o la 1.0.2: esas versiones buscaban sus actualizaciones sólo en ese sitio, así que ya no se actualizan solas. Tu red está bien. Instala la [última versión](https://github.com/nexsoftgroup/kibo/releases/latest) encima de la que tienes, con el [comando de la terminal](instalar.md) o con el instalador: tus proyectos y conversaciones se conservan. Desde ahí, Kibo se actualiza solo desde GitHub.
+
 ## ¿Necesito Git?
 
 Kibo no. Pero **Claude Code en Windows** sí lo necesita: si lo vas a usar, instala [Git for Windows](https://git-scm.com/download/win).
