@@ -47,10 +47,10 @@ Todo va por el **chat del equipo**, a la derecha:
 ### Cómo se comunican
 
 - **Tú → MAIN:** tu mensaje le llega marcado «[tú desde Agent Hub]».
-- **Peer → peer:** cualquier agente puede derivarle una tarea a otro del mismo proyecto con `hablar <peer> "mensaje"`, aunque esté inactivo: Kibo lo despierta con el mensaje. Con `equipo` ve quién está en el proyecto y en qué estado. No se despierta una Wiki detenida ni una sesión abierta en otra ventana. Cada sesión que abre Kibo recibe estas instrucciones al empezar, y la MAIN sabe que los peers se derivan tareas sin pasar por ella. *Desde la 1.0.4.*
+- **Peer → peer:** cualquier agente puede derivarle una tarea a otro del mismo proyecto con `hablar <peer> "mensaje"`, aunque esté inactivo: Kibo lo despierta con el mensaje. Con `equipo` ve quién está en el proyecto y en qué estado. No se despierta una Wiki detenida ni una sesión abierta en otra ventana. Cada sesión que abre Kibo recibe estas instrucciones al empezar, y la MAIN sabe que los peers se derivan tareas sin pasar por ella. *Desde la 1.0.4.* A un agente que está trabajando, Kibo no le escribe nada en su consola: los agentes se hablan entre ellos directamente, y lo que ves en la consola es sólo lo que escribes tú. *Desde la 1.0.5.*
 - **MAIN → peers:** la MAIN no lanza procesos: le **pide a Kibo** listar, despertar, crear o escribirle a un peer, y Kibo lo hace. Kibo **comprueba que el encargo le llegó** y, si no, lo reintenta y le avisa a la MAIN.
 - **Peers → MAIN:** la MAIN les pide que le informen al terminar, en pocas líneas. Además, **Kibo le avisa sola** cuando un peer termina, pide permiso o se traba (diez minutos trabajando sin novedades): agrupa los avisos que llegan juntos, espera a que la MAIN esté libre, no repite el mismo aviso y no la despierta si el peer ya le informó. Quieta, la MAIN no gasta: sólo se mueve cuando hay novedades de lo que ella encargó.
-- **MAIN ↔ MAIN:** la MAIN de un proyecto le puede consultar o pedir algo a la de otro, siempre a través de Kibo. Sólo entre MAIN (los peers no cruzan de proyecto), con un tope por par para evitar bucles.
+- **MAIN ↔ MAIN:** la MAIN de un proyecto le puede consultar o pedir algo a la de otro, siempre a través de Kibo. Sólo entre MAIN (los peers no cruzan de proyecto), con un tope por par para evitar bucles. *Desde la 1.0.5,* a una MAIN abierta Kibo no le escribe en su consola: sólo despierta, con el mensaje, a una que está cerrada.
 - **Varios equipos a la vez:** con **Lidera**, una MAIN lidera y las demás colaboran con ella. Cada una sabe, antes de la orden, quién lidera; las que colaboran le informan a la que lidera, y esa te contesta con el resultado de todas.
 - **Todo queda a la vista:** quién despertó, creó o le escribió a qué peer, cuándo y por qué, en el chat del equipo y en **Mensajes entre agentes**.
 
@@ -81,15 +81,14 @@ Orquestar es algo que hace **Claude**; lo que lo vuelve ordenado es **la configu
 
 *Desde la 1.0.4.* Cuando varios peers trabajan en el mismo proyecto, dos podrían querer editar el mismo archivo a la vez. Kibo lo evita:
 
-- **El segundo espera:** si un peer quiere editar un archivo que otro está editando, Kibo lo frena, le dice quién lo tiene y lo deja esperando. Cuando el primero termina su turno, Kibo le avisa al segundo que ya puede seguir.
+- **El segundo espera:** si un peer quiere editar un archivo que otro está editando, Kibo lo frena y le dice quién lo tiene. Mientras tanto, el segundo sigue con otra cosa y vuelve a intentarlo después, o se coordina con el otro. *Desde la 1.0.5, Kibo no escribe el aviso de «quedó libre» en su consola.*
 - **Nada queda bloqueado para siempre:** un archivo se libera solo a los 15 minutos sin cambios.
-- **Los peers se pueden hablar** para coordinarse, con `hablar <peer> "mensaje"`. Queda en el registro del equipo, a la vista.
+- **Los peers se coordinan entre ellos** directamente. Si el otro está inactivo, `hablar <peer> "mensaje"` lo despierta con el mensaje, y queda en el registro del equipo.
 - **Ceder antes:** si su trabajo no se cruza, el que tiene el archivo lo libera con `candado ceder <archivo>`. `candado lista` muestra quién tiene cada archivo.
 - **La MAIN lo previene:** evita darle el mismo archivo a dos peers a la vez.
 
 Sólo afecta a las sesiones que abre Kibo. Las sesiones de Claude que abres por tu cuenta no cambian, y Kibo no toca la configuración de ningún proyecto. Para que cada peer trabaje en su propia copia del repo, está el [worktree por peer](worktree-por-peer.md).
 
-![La consola de un peer: Kibo lo frena porque otro peer está editando el mismo archivo, se coordinan con «hablar» y Kibo avisa cuando el archivo queda libre](img/archivo-en-uso.png)
 
 ### Sin tope de agentes: la MAIN cuida el costo
 

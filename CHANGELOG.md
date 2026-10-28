@@ -4,6 +4,34 @@ Lo que cambia en cada versión de Kibo. Las versiones siguen
 [versionado semántico](https://semver.org/lang/es/): `MAYOR.MENOR.ARREGLO`.
 
 
+## 1.0.5 · 2026-10-28
+
+Descarga y archivos: [Release v1.0.5](https://github.com/nexsoftgroup/kibo/releases/tag/v1.0.5).
+
+### Corregido
+
+- **Los mensajes entre agentes ya no aparecen como si los hubieras escrito tú:** Kibo escribía en la consola de un
+  agente abierto lo que le decía otro agente (o la MAIN) y lo enviaba. El agente lo tomaba como un mensaje tuyo y, si
+  estabas escribiendo en esa consola, se mezclaba con tu texto. Ahora Kibo no escribe nada en la consola de un agente
+  abierto: los agentes se comunican entre ellos directamente. Kibo sólo despierta, con el mensaje, a un agente que
+  está cerrado ([#11](https://github.com/nexsoftgroup/kibo/issues/11)).
+- **Tampoco los otros avisos que Kibo escribía en la consola:** el de «el archivo quedó libre» del candado entre
+  agentes y el mensaje entre las MAIN de distintos proyectos. Un agente frenado por el candado sigue con otra cosa y
+  vuelve a intentarlo, o se coordina con el otro. Kibo sólo despierta, con el mensaje, a una MAIN que está cerrada.
+
+### Cambiado
+
+- **Las actualizaciones se descargan sólo desde GitHub:** Kibo busca la versión nueva y descarga el instalador
+  únicamente de los Releases de NexSoft en GitHub. kibo.nexsoftgroup.com ya no es respaldo. «Leer más» y la página de
+  descarga también llevan a GitHub.
+- **Los comandos de la terminal** (`install.ps1` e `install.sh`) descargan sólo de GitHub. Si GitHub no responde, lo
+  dicen y no instalan.
+- **Las versiones 1.0.0 a 1.0.2 no se actualizan solas a la 1.0.5:** buscaban sus actualizaciones sólo en
+  kibo.nexsoftgroup.com, que ya no aloja instaladores. Si tienes una de ellas, instala la 1.0.5 a mano desde GitHub,
+  encima de la que tienes: tus proyectos y conversaciones se conservan.
+- **Términos de uso 1.2:** la cláusula 4 nombra sólo a GitHub como el lugar de donde Kibo busca y descarga sus
+  actualizaciones.
+
 ## 1.0.4 · 2026-10-27
 
 Descarga y archivos: [Release v1.0.4](https://github.com/nexsoftgroup/kibo/releases/tag/v1.0.4).
